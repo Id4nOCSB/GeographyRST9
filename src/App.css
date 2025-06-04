@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #2E7D32;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.App-header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+.App-header .header-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.App-header .edit-button {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+  transition: all 0.3s ease;
+}
+
+.App-header .edit-button:hover {
+  background-color: #0A3D12;
+  border-color: #0A3D12;
+}
+
+.App-header .reset-button {
+  transition: all 0.3s ease;
+}
+
+.App-header .reset-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.save-alert {
+  margin-bottom: 0;
+  border-radius: 0;
+  text-align: center;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+main {
+  flex: 1;
+  background-color: #f5f5f5;
+}
+
+.App-footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}

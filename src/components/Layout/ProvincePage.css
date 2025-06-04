@@ -1,0 +1,47 @@
+.province-page {
+  padding: 20px 0;
+}
+
+.province-title {
+  color: #2E7D32;
+  margin-bottom: 5px;
+}
+
+.province-subtitle {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.province-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.province-image-container {
+  width: calc(33.333% - 15px);
+  min-width: 250px;
+  margin-bottom: 15px;
+}
+
+.province-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+  margin-top: 5px;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .province-image-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+.image-input-zone {
+  margin-bottom: 20px;
+}
+
+.image-input-zone .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.image-input-zone .card-title {
+  color: #2E7D32;
+  margin-bottom: 0;
+}
+
+.image-input-zone .image-preview {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.image-input-zone .btn-success {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.image-input-zone .btn-success:hover {
+  background-color: #388E3C;
+  border-color: #388E3C;
+}
+
+.image-input-zone .btn-primary {
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
+
+.image-input-zone .btn-primary:hover {
+  background-color: #1976D2;
+  border-color: #1976D2;
+}
+
+.image-input-zone .btn-danger {
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+.image-input-zone .btn-danger:hover {
+  background-color: #D32F2F;
+  border-color: #D32F2F;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-input-zone .col-md-4 {
+    width: 100%;
+  }
+}

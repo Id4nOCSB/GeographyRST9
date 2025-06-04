@@ -1,0 +1,63 @@
+.province-editor {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.province-editor h2 {
+  color: #2E7D32;
+  margin-bottom: 20px;
+}
+
+.province-editor .card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.province-editor .form-label {
+  font-weight: 500;
+}
+
+.province-editor .form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+.province-editor .btn-primary {
+  background-color: #2E7D32;
+  border-color: #2E7D32;
+}
+
+.province-editor .btn-primary:hover {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+}
+
+.province-editor .btn-success {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.province-editor .btn-success:hover {
+  background-color: #388E3C;
+  border-color: #388E3C;
+}
+
+.province-editor .nav-tabs .nav-link {
+  color: #555;
+}
+
+.province-editor .nav-tabs .nav-link.active {
+  color: #2E7D32;
+  font-weight: 500;
+  border-bottom: 2px solid #2E7D32;
+}
+
+.province-editor .table {
+  margin-bottom: 0;
+}
+
+.province-editor .card-img-top {
+  height: 150px;
+  object-fit: cover;
+}

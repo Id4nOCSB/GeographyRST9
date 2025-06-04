@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/georsttool/static/css/main.cf43b889.css",
+    "main.js": "/georsttool/static/js/main.62abb5d4.js",
+    "static/js/453.5fd5bd5a.chunk.js": "/georsttool/static/js/453.5fd5bd5a.chunk.js",
+    "static/media/spritesheet.svg": "/georsttool/static/media/spritesheet.a4e0eb7ad904a4858361.svg",
+    "index.html": "/georsttool/index.html",
+    "main.cf43b889.css.map": "/georsttool/static/css/main.cf43b889.css.map",
+    "main.62abb5d4.js.map": "/georsttool/static/js/main.62abb5d4.js.map",
+    "453.5fd5bd5a.chunk.js.map": "/georsttool/static/js/453.5fd5bd5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf43b889.css",
+    "static/js/main.62abb5d4.js"
+  ]
+}

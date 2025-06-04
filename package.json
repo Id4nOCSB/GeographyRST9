@@ -1,8 +1,8 @@
 {
-  "name": "georsttool",
+  "name": "GeographyRST9",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/georsttool",
+  "homepage": "https://yourusername.github.io/GeographyRST9",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

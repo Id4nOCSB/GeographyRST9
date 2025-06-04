@@ -11,6 +11,7 @@ This interactive web application allows you to explore and customize information
   - [Editing Province Data](#editing-province-data)
   - [Drawing on Maps](#drawing-on-maps)
   - [Saving Your Work](#saving-your-work)
+  - [Customizing JSON Files Directly](#customizing-json-files-directly)
 - [Deployment](#deployment)
 - [Troubleshooting](#troubleshooting)
 - [Additional Help](#additional-help)
@@ -143,6 +144,46 @@ Your changes are automatically saved to your browser's local storage when you cl
 
 - Your data will persist even if you close the browser and come back later
 - If you want to start over, click the "Reset to Default Data" button at the top of the page
+
+### Customizing JSON Files Directly
+
+This application is designed to work without a backend server, making it perfect for hosting on GitHub Pages. All province data is stored in JSON files that you can edit directly:
+
+1. **Edit the Province Data File**:
+   - Open the file `public/provinceData.json` in any text editor
+   - Replace the example data with your own province information
+   - Save the file
+
+2. **Edit the GeoJSON File (Optional)**:
+   - If you want to customize the map shapes, open `public/canadaGeoJson.json`
+   - Modify the coordinates for your province or add new provinces
+   - Make sure the province name in the GeoJSON matches the name in your provinceData.json
+
+**Example JSON Structure:**
+
+```json
+{
+  "name": "Alberta",
+  "capital": "Edmonton",
+  "population": 4371000,
+  "area": 661848,
+  "description": "Alberta is a province in Western Canada...",
+
+  "keyFacts": [
+    { "fact": "Official Language", "value": "English" },
+    { "fact": "Major Cities", "value": "Calgary, Edmonton, Red Deer" }
+  ],
+
+  "images": [
+    { 
+      "url": "https://example.com/alberta-mountains.jpg", 
+      "caption": "Rocky Mountains in Alberta" 
+    }
+  ]
+}
+```
+
+After editing these files, rebuild and redeploy your application to see the changes.
 
 ## Deployment
 

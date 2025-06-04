@@ -72,3 +72,26 @@ main {
   padding: 15px;
   text-align: center;
 }
+
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 2rem;
+}
+
+.loading-container p,
+.error-container p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.error-container p {
+  color: #dc3545;
+}

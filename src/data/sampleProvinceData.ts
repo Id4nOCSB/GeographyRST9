@@ -4,8 +4,8 @@
 export const sampleProvinceData = {
     name: "Lake Nova",
     capital: "Harmony City",
-    population: 2500000,
-    area: 72000,
+    population: 11000000,
+    area: 115000,
     description: "This is a detailed description of your province. Include information about its geography, history, economy, and culture. Discuss what makes this province unique and interesting. You can add as much detail as needed to provide a comprehensive overview.",
     mapCenter: [45.0, -80.0] as [number, number], // Latitude and longitude of the center of your province
 

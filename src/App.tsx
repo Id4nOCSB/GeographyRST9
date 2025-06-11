@@ -12,95 +12,22 @@ import * as GeoJSON from 'geojson';
 const STORAGE_KEY = 'provinceData';
 
 function App() {
-  // Initialize state from local storage or use sample data
-  const [provinceData, setProvinceData] = useState<ProvinceData>(() => {
-    const savedData = localStorage.getItem(STORAGE_KEY);
-
-    // Start with sample data or saved data
-    const initialData = savedData ? JSON.parse(savedData) : sampleProvinceData;
-
-    // If there's no province shape in the data, find it in the GeoJSON
-    if (!initialData.provinceShape) {
-      // Find the feature for this province
-      const provinceFeature = simplifiedCanadaGeoJson.features.find(
-        feature => feature.properties.name === initialData.name
-      );
-
-      if (provinceFeature) {
-        initialData.provinceShape = provinceFeature;
-      }
-    }
-
-    return initialData;
-  });
-
   const [isEditing, setIsEditing] = useState(false);
   const [showSaveAlert, setShowSaveAlert] = useState(false);
-
-  // Save to local storage whenever provinceData changes
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(provinceData));
-  }, [provinceData]);
-
-  // Handle saving edited data
-  const handleSaveData = (editedData: ProvinceData) => {
-    setProvinceData(editedData);
-    setIsEditing(false);
-    setShowSaveAlert(true);
-
-    // Hide the alert after 3 seconds
-    setTimeout(() => {
-      setShowSaveAlert(false);
-    }, 3000);
-  };
-
-  // Handle canceling edits
-  const handleCancelEdit = () => {
-    setIsEditing(false);
-  };
-
-  // Reset to default data
-  const handleResetData = () => {
-    if (window.confirm('Are you sure you want to reset all data to default values? This cannot be undone.')) {
-      setProvinceData(sampleProvinceData);
-      setShowSaveAlert(true);
-      setTimeout(() => {
-        setShowSaveAlert(false);
-      }, 3000);
-    }
-  };
+  const provinceData = sampleProvinceData;
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Canadian Province Geography RST</h1>
-        <p>A detailed exploration of a Canadian province</p>
-        <div className="header-buttons">
-          <Button 
-            variant={isEditing ? "secondary" : "primary"} 
-            onClick={() => setIsEditing(!isEditing)}
-            className="edit-button"
-          >
-            {isEditing ? "Cancel" : "Edit Province Data"}
-          </Button>
-
-          {!isEditing && (
-            <Button 
-              variant="outline-light" 
-              onClick={handleResetData}
-              className="reset-button"
-            >
-              Reset to Default Data
-            </Button>
-          )}
-        </div>
+        <p>by Idan Sheranosher, grade 9</p>
       </header>
 
       {showSaveAlert && (
-        <Alert 
-          variant="success" 
+        <Alert
+          variant="success"
           className="save-alert"
-          onClose={() => setShowSaveAlert(false)} 
+          onClose={() => setShowSaveAlert(false)}
           dismissible
         >
           Data has been successfully saved!
@@ -109,14 +36,14 @@ function App() {
 
       <main>
         {isEditing ? (
-          <ProvinceEditor 
-            provinceData={provinceData} 
-            onSave={handleSaveData} 
-            onCancel={handleCancelEdit}
+          <ProvinceEditor
+            provinceData={provinceData}
+            onSave={()=>{}}
+            onCancel={()=>{}}
           />
         ) : (
-          <ProvincePage 
-            provinceData={provinceData} 
+          <ProvincePage
+            provinceData={provinceData}
             provincesGeoJson={simplifiedCanadaGeoJson}
           />
         )}

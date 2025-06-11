@@ -177,9 +177,9 @@ const DrawingTools: React.FC<{
   );
 };
 
-const CanadaMap: React.FC<CanadaMapProps> = ({ 
-  provincesData, 
-  selectedProvince, 
+const CanadaMap: React.FC<CanadaMapProps> = ({
+  provincesData,
+  selectedProvince,
   onProvinceSelect,
   onProvinceShapeChange,
   isEditable = false
@@ -213,9 +213,9 @@ const CanadaMap: React.FC<CanadaMapProps> = ({
 
   return (
     <div className="canada-map-container">
-      <MapContainer 
-        center={[60, -95]} 
-        zoom={4} 
+      <MapContainer
+        center={[45.0, -80.0]}
+        zoom={4}
         style={{ height: '500px', width: '100%' }}
       >
         <TileLayer
@@ -223,8 +223,8 @@ const CanadaMap: React.FC<CanadaMapProps> = ({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         {provincesData && (
-          <GeoJSON 
-            data={provincesData} 
+          <GeoJSON
+            data={provincesData}
             style={provinceStyle}
             onEachFeature={onEachProvince}
           />
@@ -232,7 +232,7 @@ const CanadaMap: React.FC<CanadaMapProps> = ({
 
         {isEditable && (
           <>
-            <DrawingTools 
+            <DrawingTools
               onProvinceShapeChange={onProvinceShapeChange}
               existingFeatures={provincesData}
             />

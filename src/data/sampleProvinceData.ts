@@ -6,29 +6,29 @@ export const sampleProvinceData = {
     capital: "Harmony City",
     population: 11000000,
     area: 115000,
-    description: "This is a detailed description of your province. Include information about its geography, history, economy, and culture. Discuss what makes this province unique and interesting. You can add as much detail as needed to provide a comprehensive overview.",
+    description: "Lakenova is an ultra-modern, urban province located in the south of modern day Ontario,  It is a major global hub for banking, technology, and innovation. Rich in forests, lakes, and fertile land, the province pushes for sustainable industries including lumber, fishing, and agriculture. Its climate, controlled by the Great Lakes, creates interesting ecosystems and lots of biodiversity. Lakenova’s sustainability plan emphasizes mixed-use housing, walkability, and public transit mini-hubs, whils’t integrating Indigenous values and companionship. The province manages resources responsibly through reforestation, regulated fishing, and a strong energy strategy centered on domestic nuclear power. With a culturally varient grand population of 11 million people, Lakenova redefines urban sprawl issues through innovative land use, showcasing a forward thinking approach that is necessary for the blending of economic growth with environmental care and social inclusion to build a prosperous and sustainable future.",
     mapCenter: [45.0, -80.0] as [number, number], // Latitude and longitude of the center of your province
 
     // Population density data for different regions within the province
     populationDensityData: [
-        {region: "Urban Area 1", density: 1200},
-        {region: "Urban Area 2", density: 950},
-        {region: "Suburban Region 1", density: 450},
-        {region: "Suburban Region 2", density: 380},
-        {region: "Rural Area 1", density: 25},
-        {region: "Rural Area 2", density: 15},
-        {region: "Remote Region", density: 2}
+        {region: "Harmony city", density: 9658},
+        {region: "Sherclarke", density: 6739},
+        {region: "South Macedonia", density: 4208},
+        {region: "Conductor Semi", density: 3685},
+        {region: "Theshir", density: 965},
+        {region: "Cafebecian", density: 37},
+        {region: "Oranzna", density: 15}
     ],
 
     // Industry locations within the province
     industries: [
         {
             id: 1,
-            name: "Major Manufacturing Plant",
+            name: "ManuX",
             type: "Manufacturing",
-            position: [51.05, -114.05] as [number, number],
+            position: [43.69, -80.35] as [number, number],
             employees: 5000,
-            description: "A large manufacturing facility producing industrial equipment."
+            description: "A large manufacturing facility producing Xray machines for the great Canadian nation."
         },
         {
             id: 2,

@@ -101,7 +101,34 @@ export const sampleProvinceData = {
             url: "https://via.placeholder.com/800x600?text=Natural+Feature",
             caption: "A significant natural feature in the province"
         }
-    ]
+    ],
+
+    // New fields added as requested
+    landforms: "Rolling hills, lakes, and river valleys.",
+    climate: "Humid continental with warm summers and cold winters.",
+    ecozones: "Mixedwood Plains, Boreal Shield.",
+    physicalProcessExplained: "Glacial retreat shaped the landscape, forming lakes and fertile soil.",
+    naturalResources: ["Timber", "Freshwater", "Minerals", "Fertile soil"],
+    indigenousPlaceNames: [
+        { originalName: "Harmony City", indigenousName: "Nibiwakamig", nation: "Anishinaabe" },
+        { originalName: "Lake Nova", indigenousName: "Mishigamaa", nation: "Ojibwe" }
+    ],
+    indigenousLandSharing: "Co-management of parks and protected areas with Indigenous communities.",
+    indigenousValueIncorporation: "Indigenous stewardship principles in resource management.",
+    demographicsEthnicity: [
+        { ethnicGroup: "Indigenous", percentage: 10 },
+        { ethnicGroup: "European", percentage: 60 },
+        { ethnicGroup: "Asian", percentage: 20 },
+        { ethnicGroup: "Other", percentage: 10 }
+    ],
+    majorPopulationTrend: "Urbanization and increasing cultural diversity.",
+    sustainabilityPlan: "Net-zero emissions by 2050, green infrastructure investment.",
+    sustainabilityTransportation: "Expansion of electric public transit and bike lanes.",
+    sustainabilityHousing: "Affordable, energy-efficient mixed-use housing developments.",
+    sustainabilityEnergy: "Focus on nuclear, hydro, and solar energy.",
+    sustainabilityGreenSpace: "Urban parks, reforestation, and green corridors.",
+    sustainabilityFoodSystem: "Support for local agriculture and sustainable fisheries.",
+    landPeopleImpact: "Policies to minimize urban sprawl and protect natural habitats."
 };
 
 // This is a simplified GeoJSON for Canadian provinces

@@ -1,47 +1,73 @@
 .province-page {
-  padding: 20px 0;
+  padding: 32px 0;
+  background: linear-gradient(120deg, #e0f7fa 0%, #f1f8e9 100%);
+  min-height: 100vh;
 }
 
 .province-title {
-  color: #2E7D32;
+  color: #1976d2;
   margin-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .province-subtitle {
-  color: #555;
-  font-size: 1.2rem;
+  color: #388e3c;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .province-images {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .province-image-container {
-  width: calc(33.333% - 15px);
-  min-width: 250px;
-  margin-bottom: 15px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.08);
+  background: #fff;
+}
+
+.province-image-container:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.18);
 }
 
 .province-image {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px 12px 0 0;
+  transition: filter 0.2s;
+}
+
+.province-image-container:hover .province-image {
+  filter: brightness(1.08) saturate(1.2);
 }
 
 .image-caption {
-  margin-top: 5px;
+  margin: 0;
+  padding: 10px 8px 12px 8px;
   text-align: center;
   font-style: italic;
-  color: #555;
+  color: #1976d2;
+  font-size: 1.05rem;
+  background: #f5faff;
+  border-radius: 0 0 12px 12px;
 }
 
 @media (max-width: 768px) {
-  .province-image-container {
-    width: 100%;
+  .province-images {
+    grid-template-columns: 1fr;
+  }
+  .province-image {
+    height: 180px;
   }
 }

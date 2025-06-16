@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/GeographyRST9/build/static/css/main.b82e5854.css",
-    "main.js": "/GeographyRST9/build/static/js/main.62933782.js",
+    "main.js": "/GeographyRST9/build/static/js/main.d3f5c52d.js",
     "static/js/453.de687274.chunk.js": "/GeographyRST9/build/static/js/453.de687274.chunk.js",
     "static/media/spritesheet.svg": "/GeographyRST9/build/static/media/spritesheet.a4e0eb7ad904a4858361.svg",
     "index.html": "/GeographyRST9/build/index.html",
     "main.b82e5854.css.map": "/GeographyRST9/build/static/css/main.b82e5854.css.map",
-    "main.62933782.js.map": "/GeographyRST9/build/static/js/main.62933782.js.map",
+    "main.d3f5c52d.js.map": "/GeographyRST9/build/static/js/main.d3f5c52d.js.map",
     "453.de687274.chunk.js.map": "/GeographyRST9/build/static/js/453.de687274.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b82e5854.css",
-    "static/js/main.62933782.js"
+    "static/js/main.d3f5c52d.js"
   ]
 }

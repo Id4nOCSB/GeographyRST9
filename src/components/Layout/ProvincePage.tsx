@@ -501,7 +501,7 @@ const ProvincePage: React.FC<ProvincePageProps> = ({ provinceData, provincesGeoJ
             </Card>
           </Col>
           <Col md={6} className="d-flex justify-content-center">
-            <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-7c54-622f-a9c8-b38af2904924/raw?se=2025-06-13T17%3A29%3A18Z&sp=r&sv=2024-08-04&sr=b&scid=0ce6d289-aedf-54d9-98bf-59b34ff29924&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-13T14%3A03%3A44Z&ske=2025-06-14T14%3A03%3A44Z&sks=b&skv=2024-08-04&sig=9v0ZC2H4UPn3t9fjrAJdvGS7iIVPjpgiJozm/9zuhVc%3D" alt="Island City" style={{maxWidth: '100%', borderRadius: '12px', boxShadow: '0 4px 16px rgba(25,118,210,0.12)'}} />
+            <img src="https://static.vecteezy.com/system/resources/previews/024/049/991/large_2x/the-metropolis-within-a-futuristic-city-inside-a-glass-dome-ai-generated-free-photo.jpg" alt="Island City" style={{maxWidth: '100%', borderRadius: '12px', boxShadow: '0 4px 16px rgba(25,118,210,0.12)'}} />
           </Col>
         </Row>
       )}
